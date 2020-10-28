@@ -16,7 +16,7 @@ public class BankAccount {
   public String toString() {
     return Integer.toString(accountID) + '\t' + Double.toString(balance);
   }
-  public boolean changeBalance(double amount, boolean type) {
+  private boolean changeBalance(double amount, boolean type) {
     boolean bad = false;
     double n = amount;
     if (type) {
