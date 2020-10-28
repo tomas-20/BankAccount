@@ -38,6 +38,6 @@ public class BankAccount {
     return changeBalance(n, true);
   }
   public String toString() {
-    return Integer.toString(accountID) + '\t' + Double.toString(balance);
+    return '#' + Integer.toString(accountID) + "\t$" + Double.toString(balance);
   }
 }
