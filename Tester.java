@@ -17,7 +17,7 @@ public class Tester {
     System.out.println(bob.getBalance());
     System.out.println("your information:");
     System.out.println(bob.toString());
-    BankAccount joe = new BankAccount(42, "not important:");
+    BankAccount joe = new BankAccount(42, "not important");
     System.out.println("your success at transfering money:");
     System.out.println(bob.transferTo(joe, bobGenerosity, bobMemory));
     System.out.println("your information now:");
