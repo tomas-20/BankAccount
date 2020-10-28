@@ -7,4 +7,7 @@ public class BankAccount {
     accountID = a;
     password = p;
   }
+  public String toString() {
+    return Integer.toString(accountID) + '\t' + Double.toString(balance);
+  }
 }
