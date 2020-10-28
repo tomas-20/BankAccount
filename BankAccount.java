@@ -13,6 +13,9 @@ public class BankAccount {
   public int getAccountID() {
     return accountID;
   }
+  public void setPassword(String newPass) {
+    password = newPass;
+  }
   private boolean changeBalance(double amount, boolean type) {
     boolean bad = false;
     double n = amount;
