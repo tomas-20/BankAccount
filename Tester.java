@@ -7,5 +7,7 @@ public class Tester {
     bob.withdraw(30.0);
     bob.withdraw(1990.0);
     System.out.println(bob.toString());
+    System.out.println(bob.getAccountID());
+    System.out.println(bob.getBalance());
   }
 }
