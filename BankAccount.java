@@ -13,9 +13,6 @@ public class BankAccount {
   public int getAccountID() {
     return accountID;
   }
-  public String toString() {
-    return Integer.toString(accountID) + '\t' + Double.toString(balance);
-  }
   private boolean changeBalance(double amount, boolean type) {
     boolean bad = false;
     double n = amount;
@@ -36,5 +33,8 @@ public class BankAccount {
   }
   public boolean withdraw(double n) {
     return changeBalance(n, true);
+  }
+  public String toString() {
+    return Integer.toString(accountID) + '\t' + Double.toString(balance);
   }
 }
