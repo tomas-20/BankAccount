@@ -11,11 +11,18 @@ public class Tester {
     bob.deposit(bobDeposit);
     bob.withdraw(bobWithdraw);
     bob.setPassword(bobNewPassword);
+    System.out.println("your number:");
     System.out.println(bob.getAccountID());
+    System.out.println("your money:");
     System.out.println(bob.getBalance());
+    System.out.println("your information:");
     System.out.println(bob.toString());
-    BankAccount joe = new BankAccount(42, "not important");
+    BankAccount joe = new BankAccount(42, "not important:");
+    System.out.println("your success at transfering money:");
     System.out.println(bob.transferTo(joe, bobGenerosity, bobMemory));
+    System.out.println("your information now:");
+    System.out.println(bob.toString());
+    System.out.println("joe's information now:");
     System.out.println(joe.toString());
   }
 }
