@@ -1,14 +1,11 @@
 public class Tester {
   public static void main(String[] args) {
-    BankAccount bob = new BankAccount(2187, "super secret");
-    bob.deposit(-2.0);
-    bob.deposit(2000.0);
-    bob.withdraw(-2.0);
-    bob.withdraw(30.0);
-    bob.withdraw(1990.0);
-    bob.setPassword("hehe I change password");
-    System.out.println(bob.toString());
+    BankAccount bob = new BankAccount(Integer.parseInt(args[0]), args[1]);
+    bob.deposit(Double.parseDouble(args[2]));
+    bob.withdraw(Double.parseDouble(args[3]));
+    bob.setPassword(args[4]);
     System.out.println(bob.getAccountID());
     System.out.println(bob.getBalance());
+    System.out.println(bob.toString());
   }
 }
